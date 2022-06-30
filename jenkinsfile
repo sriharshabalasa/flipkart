@@ -6,7 +6,7 @@ pipeline {
   }
 
     stages {
-       stage("Git Checkout"){
+       stage("Git Checkout download"){
           steps{
            git 'https://github.com/sriharshabalasa/flipkart.git'
            }
