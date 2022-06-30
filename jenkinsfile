@@ -8,13 +8,13 @@ pipeline {
     stages {
        stage("Git Checkout"){
           steps{
-           git 'https://github.com/sriharshabalasa/ajio.git'
+           git 'https://github.com/sriharshabalasa/flipkart.git'
            }
           }
           
            stage("build "){
           steps{
-           sh "mvn -f ajiolux/pom.xml clean package"
+           sh "mvn -f flipkart/pom.xml clean package"
            }
           }
         
