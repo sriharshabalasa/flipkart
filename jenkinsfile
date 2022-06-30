@@ -21,7 +21,7 @@ pipeline {
         stage ('Deploy') {
       steps {
         script {
-          deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://13.127.69.5:8080/')], contextPath: '', onFailure: false, war: 'flipkart/target/*.war' 
+          deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://3.108.249.85:8080/')], contextPath: '', onFailure: false, war: 'flipkart/target/*.war' 
         }
       }
     }
